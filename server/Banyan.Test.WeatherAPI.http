@@ -1,0 +1,6 @@
+@Banyan.Test.WeatherAPI_HostAddress = http://localhost:5102
+
+GET {{Banyan.Test.WeatherAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
