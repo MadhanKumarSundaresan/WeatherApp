@@ -27,6 +27,8 @@ builder.Services.AddDbContext<WeatherDbContext>(options =>
     options.UseSqlite("Data Source=weather.db"));
 builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
 builder.Services.AddScoped<JWTService>();
+builder.Services.AddScoped<PasswordHasher>();
+builder.Services.AddHttpClient<OpenWeatherService>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
