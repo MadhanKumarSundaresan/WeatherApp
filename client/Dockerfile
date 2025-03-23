@@ -3,16 +3,23 @@ FROM node:22.14 AS build
 WORKDIR /app
 
 # Install dependencies and build the app
-COPY ./package.json ./
-COPY ./package-lock.json ./
+COPY ./package.json ./package-lock.json ./
 RUN npm install
 COPY . .
-
 RUN npm run build
 
-# Use NGINX to serve the React app
-FROM nginx:1.25
-COPY --from=build /app/build /usr/share/nginx/html
+# Use Node.js to serve the React app
+FROM node:22.14 AS static
+WORKDIR /app
 
-# Expose port 80
-EXPOSE 80
+# Install `serve` to serve static files
+RUN npm install -g serve
+
+# Copy the build output
+COPY --from=build /app/build ./build
+
+# Serve the app on port 3000
+CMD ["serve", "-s", "build", "-l", "3000"]
+
+# Expose port 3000
+EXPOSE 3000

@@ -2,9 +2,7 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banyan.Test.WeatherAPI", "src\Banyan.Test.WeatherAPI.csproj", "{F0655853-3120-8A9A-A747-078A096216C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banyan.Test.WeatherAPI.Tests", "Banyan.Test.WeatherAPI.Tests\Banyan.Test.WeatherAPI.Tests.csproj", "{30ABF9D5-363A-46F1-B3FD-075DA299A5EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banyan.Test.WeatherAPI", "server\Banyan.Test.WeatherAPI.csproj", "{F0655853-3120-8A9A-A747-078A096216C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

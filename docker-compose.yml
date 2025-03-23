@@ -1,15 +1,11 @@
+version: '3.8'
 
 services:
   server:
     build: ./server
     ports:
-      - "5000:5000"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-
+      - "5102:5102"
   client:
     build: ./client
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=development
