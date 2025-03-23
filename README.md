@@ -17,20 +17,6 @@ This is a **Full-Stack Weather Application** built with:
 
 ---
 
-## 🚀 **How to Run Locally (Without Docker)**
-
-### ✅ **1. Prerequisites**
-Ensure you have:
-- **Node.js + NPM** installed → [Download Node.js](https://nodejs.org)
-- **.NET SDK 8.0+** installed → [Download .NET 8](https://dotnet.microsoft.com/en-us/download)
-- **SQLite** installed (or use the provided `weather.db`)
-
-### ✅ **2. Clone the Repository**
-```bash
-git clone https://github.com/MadhanKumarSundaresan/WeatherApp.git
-cd weatherApp
-```
-
 ## 🐳 **Run with Docker**
 You can containerize the entire application using Docker.
 
